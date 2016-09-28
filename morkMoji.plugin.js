@@ -12,5 +12,5 @@ morkMoji.prototype.getDescription = function () { return "Allows you to set a cu
 morkMoji.prototype.getVersion = function () { return "0.1.0"; };
 morkMoji.prototype.getAuthor = function () { return "TheMork#1944"; };
 morkMoji.prototype.getSettingsPanel = function () {
-    return "<h3>MorkMoji Settings</h3>\n<br/><input type=\"range\" id=\"size\" value=\"32\" min=\""+size+"\" max=\"96\" onchange=\"morkMoji.prototype.save()\" onedit=\"document.getElementById('sizeLabel').innerHTML=\" style=\"width:100%\">\n<br/><div id=\"sizeLabel\">"+size+"</div>;
+    return "<h3>MorkMoji Settings</h3>\n<br/><input type=\"range\" id=\"size\" value=\"32\" min=\""+size+"\" max=\"96\" onchange=\"morkMoji.prototype.save()\" style=\"width:100%\">";
 };
