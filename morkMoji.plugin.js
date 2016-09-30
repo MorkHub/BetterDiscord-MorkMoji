@@ -1,7 +1,7 @@
 //META{"name":"morkMoji"}*//
 var morkMoji = function () {};
 var size = localStorage.getItem('size') || 64;
-morkMoji.prototype.start = function () { localStorage.setItem('size',size); BdApi.injectCSS("morkMoji", "img.emoji.jumboable {width:"+size+"px !important;height:auto !important;}"); };
+morkMoji.prototype.start = function () { localStorage.setItem('size',size); BdApi.injectCSS("morkMoji", "img.emoji.jumboable {width:"+size+"px !important;height:auto !important;max-height:"+size+";}"); };
 morkMoji.prototype.stop = function () { BdApi.clearCSS("morkMoji"); };
 morkMoji.prototype.save = function () {size = document.getElementById("size").value; localStorage.setItem('size',size);morkMoji.prototype.reload()};
 morkMoji.prototype.load = function () {};
