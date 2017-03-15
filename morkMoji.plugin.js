@@ -56,8 +56,10 @@ BetterEmoji.prototype.observer = function (e) {
 };
 
 BetterEmoji.prototype.getSettingsPanel = function () {
-    return "<h3>Settings for BetterEmoji</h3><br/>\
-	<input type='range' id='BE_size' min='32' value='"+this.data.size+"' max='96' onchange='BetterEmoji.prototype.update(this.value)' style='width:100%'>";
+    return '<h3>Settings for BetterEmoji</h3><br/>\
+	<input type="range" id="BE_size" min="32" value="'+this.data.size+'" max="96" onchange="BetterEmoji.prototype.update(this.value)" style="width:100%"><br/>\
+	<div class="markup" data-colour="true" style="color: rgb(35, 236, 236); background-color: #36393e; padding: 5px; border-radius: 5px"><span class="timestamp" data-24="true"><span class="username-wrapper"><strong class="user-name" style="color: rgb(35, 236, 236);">TheMork</strong><i class="highlight-separator right-pad">: </i></span><span class="message-content"><img draggable="false" class="emoji jumboable" alt=":ok_hand:" src="/assets/b6f700d4bc253abdb5ad576917b756d8.svg"></span>\
+	</div>';
 };
 
 BetterEmoji.prototype.getName = function () {
